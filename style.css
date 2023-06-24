@@ -1,0 +1,441 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    color: #171010;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.main{
+    position: relative;
+    overflow: hidden;
+}
+.page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}
+.page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}
+.page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}
+.page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}
+canvas{
+    /* position: relative; */
+    z-index: 99;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.loop{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    /* background-color: red; */
+    font-size: 80px;
+    white-space: nowrap;
+    font-family: 'Gilroy', sans-serif;
+}
+.loop>h1{
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);    
+    }
+    100%{
+        transform: translateX(-100%);    
+    }
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    height: 7%;
+    width: 100%;
+    /* background-color: red; */
+    position: fixed;
+    padding: 0px 30px;
+}
+nav>h1{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+.page>h3{
+    position: absolute;
+    top: 58%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: #7c7c7c;
+    left: 4%;
+    z-index: 1000;
+}
+.page>h4{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    z-index: 1000;
+}
+
+.page1>h3{
+    font-weight: 400;
+    font-size: 0.875rem;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 1000;
+}
+.page1>h1{
+    line-height: 1.3;
+    font-size: 2.75rem;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.page1>h4{
+    font-weight: 400;
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+}
+.page1>h2{
+    text-align: end;
+    line-height: 1.3;
+    font-size: 2.75rem;
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+}
+
+.page2>h3{
+    font-weight: 400;
+    font-size: 0.875rem;
+    position: absolute;
+    top: 23%;
+    left: 5%;
+}
+.page2>h1{
+    line-height: 1.3;
+    font-size: 3.75rem;
+    position: absolute;
+    top: 28%;
+    left: 5%;
+}
+.page2>p{
+    line-height: 1.2;
+    text-align: end;
+    position: absolute;
+    top: 52%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: #7c7c7c;
+    right: 8%;
+}
+.page3>p{
+    line-height: 1.2;
+    position: absolute;
+    top:20%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: #7c7c7c;
+    left: 5%;
+}
+.page3>h3{
+    font-weight: 400;
+    font-size: 0.875rem;
+    position: absolute;
+    top: 45%;
+    right: 8%;
+}
+.page3>h1{
+    text-align: end;
+    line-height: 1.3;
+    font-size: 3.75rem;
+    position: absolute;
+    top: 50%;
+    right: 8%;
+}
+.page4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 999;
+}
+.page4>h1{
+    text-align: center;
+    line-height: 1.3;
+    font-size: 4rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,0);
+    white-space: nowrap;
+}
+.page4>h3{
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page4>.para{
+    display: flex;
+    gap: 0.9375rem;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.para>h4{
+    font-weight: 500;
+}
+.page6{
+    position: relative;
+    height: 150vh;
+    width: 100vw;
+    background-color: rgb(23, 16, 16);
+    border-bottom: 1.5px dashed #8886868a;
+    /* z-index: 999; */
+}
+.page6>h1{
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page6>h3{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page6>.grid{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    color: #fff;
+    position: relative;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page6>.grid>div{
+    white-space: nowrap;
+    text-align: start;
+    background-color: #fff;
+    padding: 45px 20px;
+    border-radius: 10px;
+}
+.page6>.grid>div>h3{
+    font-size: 0.875rem;
+}
+.page6>.grid>div>h1{
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+.page6>.grid>div>p{
+    font-size: 0.9375rem;
+}
+
+.page7{
+    /* width: 100vh; */
+    height: 150vh;
+    position: relative;
+    background-color: #171010;
+}
+.page7>h1,
+.page7>p,
+.page7>div{
+    color: #fff;
+}
+.page7>h1{
+    font-size: 4.3125rem;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page7>p{
+    font-size: 0.875rem;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page7>img{
+    
+    z-index: 99;
+    height: 650px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.page7>.text1{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    /* background-color: red; */
+    font-size: 75px;
+    white-space: nowrap;
+}
+.text1>h1{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 700;
+    animation-name: anim;
+    animation-duration: 26s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.page7>.text2{
+    display: flex;
+    position: absolute;
+    top: 44%;
+    height: 25%;
+    width: 100%;
+    /* background-color: red; */
+    font-size: 75px;
+    white-space: nowrap;
+}
+.text2>h1{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 700;
+    animation-name: anim;
+    animation-duration: 26s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.page7>.text3{
+    display: flex;
+    position: absolute;
+    top: 58%;
+    height: 25%;
+    width: 100%;
+    /* background-color: red; */
+    font-size: 75px;
+    white-space: nowrap;
+}
+.text3>h1{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 700;
+    animation-name: anim;
+    animation-duration: 33s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+
+@media(max-width:500px){
+    .page1>h2{
+        text-align: start;
+        top: 70%;
+        left: 5%;
+    }
+    .page1>h4{
+        text-align: start;
+        top: 110%;
+        left: 5%;
+    }
+    .page2>p{
+        text-align: start;
+        top: 70%;
+        left: 5%;
+    }
+    .page3>h3{
+        text-align: start;
+        top: 56%;
+        left: 5%;
+    }
+    .page3>h1{
+        text-align: start;
+        top: 60%;
+        left: 5%;
+    }
+    .page4>h1{
+        top: 15%;
+        font-size: 200%;
+        white-space: normal;
+    }
+    .page4>h3{
+        top: 10%;
+    }
+    .para{
+        flex-direction: column;
+    }
+    .page4{
+        overflow-y: hidden;
+    }
+    .page6>h1{
+        top: 10%;
+        font-size: 2.5rem;
+    }
+    .page6>h3{
+        top: 17%;
+        font-size: 10px;
+        text-align: center;
+    }
+}
